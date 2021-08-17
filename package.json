@@ -10,8 +10,6 @@
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\""
   },
   "keywords": [
-    "Stevie",
-    "Hu"
   ],
   "author": "Stevie Hu",
   "license": "ISC",
