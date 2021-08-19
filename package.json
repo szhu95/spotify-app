@@ -6,12 +6,11 @@
   "scripts": {
     "start": "webpack serve --config webpack.config.js --env env=development",
     "build": "webpack --config webpack.config.js --env env=production",
+    "postbuild": "aws s3 sync build/ s3://spotify-dj-app-bucket/ --delete",
     "test": "npm test",
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\""
   },
   "keywords": [
-    "Stevie",
-    "Hu"
   ],
   "author": "Stevie Hu",
   "license": "ISC",
