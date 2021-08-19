@@ -29,7 +29,7 @@ const GetPlaylistsButton = () => {
 
     return (
     <>
-    <button onClick={handleGetPlaylists}> Get Playlists </button>
+    <button onClick={handleGetPlaylists}> get playlists </button>
     {data?.items ? data.items.map((item : {}) => <p>{item.name}</p>) : null}
     </>
     );
